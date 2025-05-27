@@ -9,7 +9,8 @@ public class Main {
         //kadai3();
         //kadai4();
         //kadai5();
-        kadai6();
+        //kadai6();
+        kadai7();
     }
     //文字列入力
     public static void kadai1(){
@@ -95,12 +96,18 @@ public class Main {
 
     //  共有プロパティ更新
     public static void kadai6(){
+        PersonStatic.setName("Hello2");
         System.out.println(PersonStatic.name);
-        PersonStatic.name = "Sardo";
-        System.out.println(PersonStatic.name);
+    }
 
-        System.out.println(PersonStatic.gender);
-        PersonStatic.gender = "Male";
-        System.out.println(PersonStatic.gender);
+    // インスタンス変数
+    public static void kadai7(){
+        Person person = new Person();
+        person.name = "Sardo";
+        Person person2 = new Person();
+        person2.name = "Hello";
+
+        System.out.println(person.name);
+        System.out.println(person2.name);
     }
 }
