@@ -1,13 +1,15 @@
 package com.sardo.learnjava.kadai;
 import java.util.Scanner;
+import com.sardo.learnjava.*;
 
 public class Main {
     public static void main(String[] args) {
-        kadai1();
-        kadai2();
-        kadai3();
+        //kadai1();
+        //kadai2();
+        //kadai3();
         //kadai4();
-        kadai5();
+        //kadai5();
+        kadai6();
     }
     //文字列入力
     public static void kadai1(){
@@ -89,5 +91,16 @@ public class Main {
     private static String contact(String str1, String str2){
         String answer = str1 + str2;
         return answer;
+    }
+
+    //  共有プロパティ更新
+    public static void kadai6(){
+        System.out.println(PersonStatic.name);
+        PersonStatic.name = "Sardo";
+        System.out.println(PersonStatic.name);
+
+        System.out.println(PersonStatic.gender);
+        PersonStatic.gender = "Male";
+        System.out.println(PersonStatic.gender);
     }
 }
